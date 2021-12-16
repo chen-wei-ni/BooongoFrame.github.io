@@ -751,4 +751,9 @@ ul {
     margin: 1rem .5rem 0 .5rem;
   }
 }
+@media screen and (max-width: 318px) {
+  .width_bn .mb_slogan .total_prize .number h1 {
+    font-size: 5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
