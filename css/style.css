@@ -124,7 +124,8 @@ ul {
 }
 
 .main_bn .right_block .total_prize .number {
-  background: linear-gradient(to top,#ffd100,#ffef00);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffd100), to(#ffef00));
+  background: linear-gradient(to top, #ffd100, #ffef00);
   -webkit-background-clip: text;
   -webkit-background-clip: text;
   background-clip: text;
@@ -169,7 +170,7 @@ ul {
   padding-top: 1.5rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   position: relative;
 }
 
