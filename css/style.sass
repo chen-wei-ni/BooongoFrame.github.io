@@ -1,0 +1,569 @@
+//fonts
+@import url('fonts.css')
+@import url('../fonts/impact.ttf')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap')
+
+$btnColor: #870cb4
+$btnBorder: #5c006c
+$detail-Left: #ffde00
+$bgc-linear: linear-gradient(#15032e,#000)
+
+body
+    margin: 0
+    padding: 0
+    font-family: Roboto, "儷黑 Pro", 微软雅黑, 黑体, "LiHei Pro Medium", "Microsoft YaHei", SimHei, sans-serif
+*
+    box-sizing: border-box
+    transition: .5s
+    font-size: .9rem
+a
+    text-decoration: none
+    color: currentColor
+img
+    max-width: 100%
+    height: auto
+    vertical-align: middle
+ul
+    list-style: none
+    padding: 0
+
+.site_body
+    height: 100vh
+    width: 100%
+    position: relative
+    background-color: #000
+    //overflow: hidden
+    /*如果不要單頁把它拿掉*/
+
+// logo
+.site-logo
+    width: 1170px
+    margin: 0 auto
+    .logo
+        background-color: rgba(#000,0.7)
+        border-radius:  0 0 20px 20px
+        width: 150px
+        padding: .2rem 1rem 
+        position: absolute
+        z-index: 10
+//上方bn
+.width_bn
+    position: relative
+    height: 500px
+    width: 100%
+    .bg_wrapper
+        position: absolute
+        background: url('../images/demo/pc/bg-top.png') top center no-repeat
+        width: 100%
+        height: 500px
+        background-size:  cover
+
+    .character
+        position: absolute
+        background: url('../images/demo/pc/banner-up.png') top center no-repeat
+        width: 100%
+        height: 500px
+        background-size: auto 100%
+    .float
+        position: absolute
+        background: url('../images/demo/pc/coin.png') top center no-repeat
+        width: 100%
+        height: 500px
+        background-size: auto 100% 
+
+/*等一下寫錢幣*/
+// slogan
+.main_bn
+    width: 1170px
+    margin: 0 auto
+    display: flex
+    justify-content: end
+    .right_block        
+        position: absolute
+        .total_prize
+            .block_black
+                margin-top: -.8rem
+                background: linear-gradient(to left,rgba(#000,0) 0%,rgba(#000,0.7) 50%,rgba(#000,0) 100%)
+                h3
+                    margin: 0
+                    text-align: center
+                    font-size: 2rem
+                    color: #fff
+                    text-shadow: 0.1em 0.1em 0.2em rgba(#000,0.5)
+                    padding: .25rem 0
+                    
+                    span
+                        font-size: 1.25rem
+                        margin-left: .25rem
+                        color: #50eb90
+                        vertical-align: 10%
+            .number
+                background: linear-gradient(to top,#ffd100,#ffef00)
+                -webkit-background-clip: text
+                color: transparent
+                filter: drop-shadow(0px 5px 5px rgba(#000,0.6))
+                h1
+                    font-family: 'impact',serif
+                    font-size: 6rem
+                    margin: 0
+                    text-align: center
+                    letter-spacing: 5px
+
+/*銜接處*/                   
+.web_connect
+    position: absolute 
+    bottom: -25px   
+    width: 100%
+    img
+        width: 100% 
+        max-height: 100px   
+
+//下半部顏色填滿
+.content_desc
+    background: $bgc-linear
+    padding: 0 0 2rem 0
+
+/*頁籤按鈕*/
+.line-one
+    width: 1170px
+    margin: 0 auto
+    display: flex
+    padding-top: 1.5rem
+    justify-content: end
+    position: relative
+    .btns
+        a
+            display: inline-block
+            margin: 0 8px
+            background-color: $btnColor
+            border: solid 2px $btnBorder
+            border-radius: 1.5rem
+            padding: .6rem .8rem  
+            span
+                color: #fff
+                font-size: .9rem
+                letter-spacing: 1px
+            &.active
+                background: linear-gradient(#cd00d5,#26005f)
+                border: solid 2px #ff94ff
+
+/*頁籤內容 ***活動遊戲**** SRART*/
+.tab-container
+    width: 1170px
+    margin: 0 auto
+
+/*內容小標題*/
+.title
+    width: 350px
+    position: absolute
+    top: 530px
+    p
+        margin: 0
+        color: #fff
+        position: relative
+        padding: 5px 0 5px 85px
+        font-size: 1.5rem
+        font-weight: bold
+        letter-spacing: 1px
+        background: linear-gradient(to right,rgba(#4c06ba,0),rgba(#4c06ba,0) 10%,rgba(#4c06ba,1) 20%,rgba(#4c06ba,0))
+        &::before
+            content: ''
+            position: absolute
+            display: inline-block
+            width: 70px
+            height: 70px
+            background: url('../images/demo/pc/title.png')
+            background-size: contain
+            left: 18px
+            top: -18px
+            
+/*個別遊戲*/
+.event_games
+    ul
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+        li 
+            margin-top: 1rem
+            text-align: center
+            a span
+                color: #fff
+                display: block
+                margin-top: .25rem
+.link_games
+    display: grid
+    border: 2px solid $btnColor
+    border-radius: .5rem
+    background-color: rgba(#fff,0.1)
+    
+    ul
+        display: flex
+        flex-wrap: wrap
+        padding-left: 3rem
+        justify-content: center
+        align-items: center
+        li
+            margin: .2rem .3rem
+            color:#fff
+            
+/*頁籤內容 ***活動內容**** SRART*/
+
+.detail
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    color: #fff
+    margin-top: 1.5rem
+    grid-column-gap: 1.2rem
+
+.left_part
+    padding: 0 2.5rem
+    ol
+        list-style-type: circle
+    ul
+        li
+            margin: 5px 0
+            line-height: 1.7
+            font-style: italic
+            span
+                font-weight: bold
+                color: #dc3bff
+            strong
+                color: $detail-Left
+                font-style: normal
+.right_part
+    padding-right: 2rem
+    table
+        width: 100%
+        text-align: center
+        .table-th
+            th,td
+                background-color: $btnColor !important
+                padding: 5px 0
+                font-weight: 600
+        tr
+            line-height: 22px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            align-items: stretch
+            th
+                width: 30%
+                font-weight: normal
+                padding: 4px 0
+            td
+                width: 69.5%
+                padding: 4px 0
+            &:nth-child(odd) td
+                background-color: rgba(#fff,0.2)
+            &:nth-child(odd) th
+                background-color: rgba(#fff,0.2)
+        
+/*頁籤內容 ***注意事項**** SRART*/
+
+.notice
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    color: #fff
+    margin-top: 1.5rem
+    grid-column-gap: 1.2rem
+
+    .notice_desc
+        padding: 0 2rem 0 2.5rem
+    ul
+        li
+            line-height: 1.8
+            position: relative
+            margin: 5px 0
+            &::before
+                content: "\25CB"
+                position: absolute
+                left: -1.2rem
+                color: #dc3bff
+                font-size: .8rem
+
+    h4
+        font-size: 1.1rem  
+        letter-spacing: 2px  
+        margin: 0
+        color: $detail-Left
+
+@media screen and ( max-width: 1200px )
+
+    .width_bn
+        height: 350px
+        .bg_wrapper
+            height: 350px
+        .character
+            height: 350px
+        .float
+            height: 350px
+
+    // slogan
+    .main_bn
+        width: 850px
+        margin: 0 auto
+        display: flex
+        justify-content: end
+        .right_block
+            width: 340px
+            .total_prize
+                .block_black 
+                    h3
+                        font-size: 1.4rem
+                        span
+                            font-size: .9rem
+                .number
+                    h1
+                        font-size: 3.8rem
+    .title
+        top: 380px
+    .line-one
+        width: 900px
+        .btns
+            a
+                padding: 0.5rem
+                span
+                    font-size: .9rem
+    .tab-container
+        width: 900px
+        margin: 0 auto
+
+    //遊戲
+    .event_games 
+        margin-top: 1.25rem
+        ul
+            grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr))
+    .link_games
+        margin-top: 2rem
+
+@media screen and ( max-width: 920px )
+    .width_bn
+        height: 280px
+        .bg_wrapper
+            height: 280px
+        .character
+            height: 280px
+        .float
+            height: 280px
+    .web_connect
+        bottom: -20px
+
+    .line-one
+        width: 700px
+        .btns
+            a
+                padding: 0.5rem
+                margin: 0 2px
+                span
+                    font-size: .7rem
+    .tab-container
+        width: 700px
+        margin: 0 auto
+    .title
+        top: 305px
+        width: 280px
+        p
+            font-size: 1.2rem
+
+    .main_bn
+        .right_block
+            width: 250px
+            right: 5rem
+            top: .5rem
+            .total_prize .number h1
+                font-size: 3rem
+
+/*------------------- 手機版---------------------------*/
+
+@media screen and ( min-width: 731px )
+    .mb_slogan
+        display: none
+
+@media screen and ( max-width: 730px )
+    /*.mfp-bg
+        position: fixed !important
+        height: auto
+    .site-logo
+        width: 100%
+        .logo
+            right: 0
+            width: 150px
+            padding: .5rem 1rem
+    .width_bn
+        height: 130vw
+        //overflow: hidden
+        .bg_wrapper
+            position: absolute
+            background: url('../images/demo/mb/mobile-bg.png') top center no-repeat      
+            background-size:  cover
+            height: 100%
+        .character
+            background: url('../images/demo/mb/mobile-bg-up.png') top center no-repeat
+            height: 100%
+            background-size: 100%
+        .float
+            height: 100%
+            background: url('../images/demo/mb/mobile-coin.png') top center no-repeat
+            height: 100%
+            background-size: 100%
+            z-index: 20
+        /*電腦版標題隱藏*/
+        .pc_slogan, 
+            display: none 
+        /*手機板大標題*/
+        .mb_slogan
+            position: absolute
+            top: 4%
+            left: initial
+            width: 100%
+            z-index: 40
+            overflow-y: auto
+            .total_prize
+                .prize
+                    background: linear-gradient(to left,rgba(#000,0) 0%,rgba(#000,0.7) 50%,rgba(#000,0) 100%)
+                    h3
+                        margin: .5rem 0
+                        padding: .25rem 0
+                        font-size: 2rem
+                        text-align: center
+                        color: #fff
+                        span
+                            color: #50eb90
+                            font-size: 1rem
+                .number
+                    background: linear-gradient(to top,#ffd100,#ffef00)
+                    -webkit-background-clip: text
+                    color: transparent
+                    filter: drop-shadow(0px 5px 5px rgba(#000,0.6))
+                    margin-top: -1rem
+                    h1
+                        font-family: 'impact',serif
+                        font-size: 6rem
+                        margin: 0
+                        text-align: center
+                        letter-spacing: 5px
+    .web_connect img
+        min-height: 50px
+
+    .line-one
+        width: 100%
+        justify-content: space-around
+        padding: 2rem 0
+        .btns
+            margin: 0
+    .tab-container
+        width: 100%
+    .mb_connect
+        position: absolute
+        width: 100%
+        bottom: 0
+        z-index: 40
+        img
+            width: 100%
+            min-height: 50px
+        .mb_desc
+            background: linear-gradient(#15032e,#000)
+            width: 100%
+            height: auto
+            margin-top: -10px
+        /*PopUp 按鈕*/
+    /*.btns
+        color: #fff
+        padding: .2rem 2rem 1rem 2rem
+        .inline_btn
+            display: flex
+            justify-content: center
+            
+            a
+                width: 100%
+                display: block
+                margin: 0 10px
+                background-color: $btnColor
+                border: solid 3px $btnBorder
+                border-radius: 50px
+                text-align: center
+                padding: .75rem 0                    
+
+        /*.wide_btn
+            display: flex
+            justify-content: center
+            a
+                width: 95%
+                display: block
+                text-align: center
+                background: linear-gradient(#cd00d5,#26005f)
+                border: solid 3px #ff94ff
+                border-radius: 50px
+                padding: 1rem 0
+                margin-top: 10px
+
+    /* pc tab 隱藏*/
+    /*.pc_desc
+        display: none*/
+    /*MB pop內容樣式*/
+    .popup-decoration 
+        position: relative
+        background: $bgc-linear
+        padding: 100px 20px 30px 20px
+        width:auto
+        max-width: 85%
+        margin: 20px auto
+        font-size: 5rem
+
+        .pop-container
+            color: #fff
+    .mfp-close-btn-in .mfp-close
+        color: #fff !important
+        font-size: 50px
+        top: 10px
+        right: 10px
+    .title
+        position: static
+        width: 250px
+        p
+            padding: 8px 0 8px 60px
+            &::before
+                width: 60px
+                height: 60px
+                left: 5px
+                top: -15px
+    /*活動內容表格的padding歸0*/
+    .right_part
+        padding: 0
+    /*遊戲為兩個一列*/
+    .event_games ul
+        grid-template-columns: repeat(2, minmax(100px, 1fr))
+    .link_games ul
+        padding: 0
+@media screen and ( max-width: 414px )
+    .width_bn
+        height: 140vw
+    .line-one
+        .btns .btn-group
+            display: grid
+            grid-template-columns: repeat(3,1fr)
+            background: linear-gradient(#cd00d5 0%, #26005f 90%,#11004f 98%)
+            border-radius: 15px 15px 0 0
+            a
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 15px 15px 0 0
+                background: transparent
+                border: none
+                margin: 0
+
+                &.active
+                    background: linear-gradient(#ee00ff, #11004f)
+                    //mix-blend-mode: hard-light
+                    filter: drop-shadow( 0 -2px 5px rgba(#000,0.5))
+                    transform: translateY(-4px)
+                    span
+    .left_part
+        padding: 0                   
+    .notice .annouce
+        padding: 0 2rem 0 2.5rem
+    .link_games
+        margin: 0 .5rem
+    .detail
+        margin: 1rem .5rem 0 .5rem

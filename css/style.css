@@ -1,0 +1,753 @@
+@charset "UTF-8";
+@import url("fonts.css");
+@import url("../fonts/impact.ttf");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "儷黑 Pro", 微软雅黑, 黑体, "LiHei Pro Medium", "Microsoft YaHei", SimHei, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: .9rem;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.site_body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  /*如果不要單頁把它拿掉*/
+}
+
+.site-logo {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.site-logo .logo {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 20px 20px;
+  width: 150px;
+  padding: .2rem 1rem;
+  position: absolute;
+  z-index: 10;
+}
+
+.width_bn {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+
+.width_bn .bg_wrapper {
+  position: absolute;
+  background: url("../images/demo/pc/bg-top.png") top center no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+
+.width_bn .character {
+  position: absolute;
+  background: url("../images/demo/pc/banner-up.png") top center no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: auto 100%;
+}
+
+.width_bn .float {
+  position: absolute;
+  background: url("../images/demo/pc/coin.png") top center no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: auto 100%;
+}
+
+/*等一下寫錢幣*/
+.main_bn {
+  width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main_bn .right_block {
+  position: absolute;
+}
+
+.main_bn .right_block .total_prize .block_black {
+  margin-top: -.8rem;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.main_bn .right_block .total_prize .block_black h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
+  padding: .25rem 0;
+}
+
+.main_bn .right_block .total_prize .block_black h3 span {
+  font-size: 1.25rem;
+  margin-left: .25rem;
+  color: #50eb90;
+  vertical-align: 10%;
+}
+
+.main_bn .right_block .total_prize .number {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffd100), to(#ffef00));
+  background: linear-gradient(to top, #ffd100, #ffef00);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+.main_bn .right_block .total_prize .number h1 {
+  font-family: 'impact',serif;
+  font-size: 6rem;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+/*銜接處*/
+.web_connect {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+}
+
+.web_connect img {
+  width: 100%;
+  max-height: 100px;
+}
+
+.content_desc {
+  background: -webkit-gradient(linear, left top, left bottom, from(#15032e), to(#000));
+  background: linear-gradient(#15032e, #000);
+  padding: 0 0 2rem 0;
+}
+
+/*頁籤按鈕*/
+.line-one {
+  width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.5rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: relative;
+}
+
+.line-one .btns a {
+  display: inline-block;
+  margin: 0 8px;
+  background-color: #870cb4;
+  border: solid 2px #5c006c;
+  border-radius: 1.5rem;
+  padding: .6rem .8rem;
+}
+
+.line-one .btns a span {
+  color: #fff;
+  font-size: .9rem;
+  letter-spacing: 1px;
+}
+
+.line-one .btns a.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cd00d5), to(#26005f));
+  background: linear-gradient(#cd00d5, #26005f);
+  border: solid 2px #ff94ff;
+}
+
+/*頁籤內容 ***活動遊戲**** SRART*/
+.tab-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/*內容小標題*/
+.title {
+  width: 350px;
+  position: absolute;
+  top: 530px;
+}
+
+.title p {
+  margin: 0;
+  color: #fff;
+  position: relative;
+  padding: 5px 0 5px 85px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(76, 6, 186, 0)), color-stop(10%, rgba(76, 6, 186, 0)), color-stop(20%, #4c06ba), to(rgba(76, 6, 186, 0)));
+  background: linear-gradient(to right, rgba(76, 6, 186, 0), rgba(76, 6, 186, 0) 10%, #4c06ba 20%, rgba(76, 6, 186, 0));
+}
+
+.title p::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: url("../images/demo/pc/title.png");
+  background-size: contain;
+  left: 18px;
+  top: -18px;
+}
+
+/*個別遊戲*/
+.event_games ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.event_games ul li {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.event_games ul li a span {
+  color: #fff;
+  display: block;
+  margin-top: .25rem;
+}
+
+.link_games {
+  display: -ms-grid;
+  display: grid;
+  border: 2px solid #870cb4;
+  border-radius: .5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link_games ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link_games ul li {
+  margin: .2rem .3rem;
+  color: #fff;
+}
+
+/*頁籤內容 ***活動內容**** SRART*/
+.detail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color: #fff;
+  margin-top: 1.5rem;
+  grid-column-gap: 1.2rem;
+}
+
+.left_part {
+  padding: 0 2.5rem;
+}
+
+.left_part ol {
+  list-style-type: circle;
+}
+
+.left_part ul li {
+  margin: 5px 0;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.left_part ul li span {
+  font-weight: bold;
+  color: #dc3bff;
+}
+
+.left_part ul li strong {
+  color: #ffde00;
+  font-style: normal;
+}
+
+.right_part {
+  padding-right: 2rem;
+}
+
+.right_part table {
+  width: 100%;
+  text-align: center;
+}
+
+.right_part table .table-th th, .right_part table .table-th td {
+  background-color: #870cb4 !important;
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+.right_part table tr {
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.right_part table tr th {
+  width: 30%;
+  font-weight: normal;
+  padding: 4px 0;
+}
+
+.right_part table tr td {
+  width: 69.5%;
+  padding: 4px 0;
+}
+
+.right_part table tr:nth-child(odd) td {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.right_part table tr:nth-child(odd) th {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*頁籤內容 ***注意事項**** SRART*/
+.notice {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color: #fff;
+  margin-top: 1.5rem;
+  grid-column-gap: 1.2rem;
+}
+
+.notice .notice_desc {
+  padding: 0 2rem 0 2.5rem;
+}
+
+.notice ul li {
+  line-height: 1.8;
+  position: relative;
+  margin: 5px 0;
+}
+
+.notice ul li::before {
+  content: "\25CB";
+  position: absolute;
+  left: -1.2rem;
+  color: #dc3bff;
+  font-size: .8rem;
+}
+
+.notice h4 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #ffde00;
+}
+
+@media screen and (max-width: 1200px) {
+  .width_bn {
+    height: 350px;
+  }
+  .width_bn .bg_wrapper {
+    height: 350px;
+  }
+  .width_bn .character {
+    height: 350px;
+  }
+  .width_bn .float {
+    height: 350px;
+  }
+  .main_bn {
+    width: 850px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .main_bn .right_block {
+    width: 340px;
+  }
+  .main_bn .right_block .total_prize .block_black h3 {
+    font-size: 1.4rem;
+  }
+  .main_bn .right_block .total_prize .block_black h3 span {
+    font-size: .9rem;
+  }
+  .main_bn .right_block .total_prize .number h1 {
+    font-size: 3.8rem;
+  }
+  .title {
+    top: 380px;
+  }
+  .line-one {
+    width: 900px;
+  }
+  .line-one .btns a {
+    padding: 0.5rem;
+  }
+  .line-one .btns a span {
+    font-size: .9rem;
+  }
+  .tab-container {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .event_games {
+    margin-top: 1.25rem;
+  }
+  .event_games ul {
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .link_games {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .width_bn {
+    height: 280px;
+  }
+  .width_bn .bg_wrapper {
+    height: 280px;
+  }
+  .width_bn .character {
+    height: 280px;
+  }
+  .width_bn .float {
+    height: 280px;
+  }
+  .web_connect {
+    bottom: -20px;
+  }
+  .line-one {
+    width: 700px;
+  }
+  .line-one .btns a {
+    padding: 0.5rem;
+    margin: 0 2px;
+  }
+  .line-one .btns a span {
+    font-size: .7rem;
+  }
+  .tab-container {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .title {
+    top: 305px;
+    width: 280px;
+  }
+  .title p {
+    font-size: 1.2rem;
+  }
+  .main_bn .right_block {
+    width: 250px;
+    right: 5rem;
+    top: .5rem;
+  }
+  .main_bn .right_block .total_prize .number h1 {
+    font-size: 3rem;
+  }
+}
+
+/*------------------- 手機版---------------------------*/
+@media screen and (min-width: 731px) {
+  .mb_slogan {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  /*.mfp-bg
+        position: fixed !important
+        height: auto */
+  .site-logo {
+    width: 100%;
+  }
+  .site-logo .logo {
+    right: 0;
+    width: 150px;
+    padding: .5rem 1rem;
+  }
+  .width_bn {
+    height: 130vw;
+    /*電腦版標題隱藏*/
+    /*手機板大標題*/
+  }
+  .width_bn .bg_wrapper {
+    position: absolute;
+    background: url("../images/demo/mb/mobile-bg.png") top center no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .width_bn .character {
+    background: url("../images/demo/mb/mobile-bg-up.png") top center no-repeat;
+    height: 100%;
+    background-size: 100%;
+  }
+  .width_bn .float {
+    height: 100%;
+    background: url("../images/demo/mb/mobile-coin.png") top center no-repeat;
+    height: 100%;
+    background-size: 100%;
+    z-index: 20;
+  }
+  .width_bn .pc_slogan {
+    display: none;
+  }
+  .width_bn .mb_slogan {
+    position: absolute;
+    top: 4%;
+    left: initial;
+    width: 100%;
+    z-index: 40;
+    overflow-y: auto;
+  }
+  .width_bn .mb_slogan .total_prize .prize {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
+  }
+  .width_bn .mb_slogan .total_prize .prize h3 {
+    margin: .5rem 0;
+    padding: .25rem 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+  }
+  .width_bn .mb_slogan .total_prize .prize h3 span {
+    color: #50eb90;
+    font-size: 1rem;
+  }
+  .width_bn .mb_slogan .total_prize .number {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffd100), to(#ffef00));
+    background: linear-gradient(to top, #ffd100, #ffef00);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+    margin-top: -1rem;
+  }
+  .width_bn .mb_slogan .total_prize .number h1 {
+    font-family: 'impact',serif;
+    font-size: 6rem;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  .web_connect img {
+    min-height: 50px;
+  }
+  .line-one {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 2rem 0;
+  }
+  .line-one .btns {
+    margin: 0;
+  }
+  .tab-container {
+    width: 100%;
+  }
+  .mb_connect {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 40;
+    /*PopUp 按鈕*/
+  }
+  .mb_connect img {
+    width: 100%;
+    min-height: 50px;
+  }
+  .mb_connect .mb_desc {
+    background: -webkit-gradient(linear, left top, left bottom, from(#15032e), to(#000));
+    background: linear-gradient(#15032e, #000);
+    width: 100%;
+    height: auto;
+    margin-top: -10px;
+  }
+  /*.btns
+        color: #fff
+        padding: .2rem 2rem 1rem 2rem
+        .inline_btn
+            display: flex
+            justify-content: center
+
+            a
+                width: 100%
+                display: block
+                margin: 0 10px
+                background-color: $btnColor
+                border: solid 3px $btnBorder
+                border-radius: 50px
+                text-align: center
+                padding: .75rem 0 */
+  /*.wide_btn
+            display: flex
+            justify-content: center
+            a
+                width: 95%
+                display: block
+                text-align: center
+                background: linear-gradient(#cd00d5,#26005f)
+                border: solid 3px #ff94ff
+                border-radius: 50px
+                padding: 1rem 0
+                margin-top: 10px */
+  /* pc tab 隱藏*/
+  /*.pc_desc
+        display: none*/
+  /*MB pop內容樣式*/
+  .popup-decoration {
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, from(#15032e), to(#000));
+    background: linear-gradient(#15032e, #000);
+    padding: 100px 20px 30px 20px;
+    max-width: 85%;
+    margin: 20px auto;
+    font-size: 5rem;
+  }
+  .popup-decoration .pop-container {
+    color: #fff;
+  }
+  .mfp-close-btn-in .mfp-close {
+    color: #fff !important;
+    font-size: 50px;
+    top: 10px;
+    right: 10px;
+  }
+  .title {
+    position: static;
+    width: 250px;
+  }
+  .title p {
+    padding: 8px 0 8px 60px;
+  }
+  .title p::before {
+    width: 60px;
+    height: 60px;
+    left: 5px;
+    top: -15px;
+  }
+  /*活動內容表格的padding歸0*/
+  .right_part {
+    padding: 0;
+  }
+  /*遊戲為兩個一列*/
+  .event_games ul {
+    -ms-grid-columns: (minmax(100px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .link_games ul {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .width_bn {
+    height: 140vw;
+  }
+  .line-one .btns .btn-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    background: -webkit-gradient(linear, left top, left bottom, from(#cd00d5), color-stop(90%, #26005f), color-stop(98%, #11004f));
+    background: linear-gradient(#cd00d5 0%, #26005f 90%, #11004f 98%);
+    border-radius: 15px 15px 0 0;
+  }
+  .line-one .btns .btn-group a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 15px 15px 0 0;
+    background: transparent;
+    border: none;
+    margin: 0;
+  }
+  .line-one .btns .btn-group a.active {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ee00ff), to(#11004f));
+    background: linear-gradient(#ee00ff, #11004f);
+    -webkit-filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.5));
+            filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.5));
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
+  .left_part {
+    padding: 0;
+  }
+  .notice .annouce {
+    padding: 0 2rem 0 2.5rem;
+  }
+  .link_games {
+    margin: 0 .5rem;
+  }
+  .detail {
+    margin: 1rem .5rem 0 .5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
