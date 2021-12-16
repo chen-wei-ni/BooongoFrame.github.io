@@ -701,7 +701,7 @@ ul {
     height: 145vw;
   }
   .line-one {
-    padding: 0;
+    padding: 0 0 1rem 0;
   }
   .content_desc {
     padding: 0 .95rem 2.5rem .95rem;
