@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("fonts.css");
-@import url("../fonts/impact.ttf");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 body {
@@ -128,7 +127,8 @@ ul {
 }
 
 .main_bn .right_block .total_prize .number h1 {
-  font-family: 'impact',serif;
+  font-family: 'impact','Roboto',serif;
+  font-weight: 900;
   font-size: 6rem;
   margin: 0;
   text-align: center;
@@ -578,21 +578,22 @@ ul {
     color: #50eb90;
     font-size: 1rem;
   }
-  .width_bn .mb_slogan .total_prize .number {
-    background: -webkit-gradient(linear, left bottom, left top, from(#ffd100), to(#ffef00));
-    background: linear-gradient(to top, #ffd100, #ffef00);
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
-            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
-    margin-top: -1rem;
-  }
+
   .width_bn .mb_slogan .total_prize .number h1 {
-    font-family: 'impact',serif;
+    font-family: 'impact','Roboto',serif;
+    font-weight: 900;
     font-size: 6rem;
     margin: 0;
     text-align: center;
     letter-spacing: 5px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffd100), to(#ffef00));
+    background: linear-gradient(to top, #ffd100, #ffef00);
+    -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
   }
   .web_connect img {
     min-height: 50px;
@@ -627,36 +628,7 @@ ul {
     height: auto;
     margin-top: -10px;
   }
-  /*.btns
-        color: #fff
-        padding: .2rem 2rem 1rem 2rem
-        .inline_btn
-            display: flex
-            justify-content: center
-
-            a
-                width: 100%
-                display: block
-                margin: 0 10px
-                background-color: $btnColor
-                border: solid 3px $btnBorder
-                border-radius: 50px
-                text-align: center
-                padding: .75rem 0 */
-  /*.wide_btn
-            display: flex
-            justify-content: center
-            a
-                width: 95%
-                display: block
-                text-align: center
-                background: linear-gradient(#cd00d5,#26005f)
-                border: solid 3px #ff94ff
-                border-radius: 50px
-                padding: 1rem 0
-                margin-top: 10px */
-  /* pc tab 隱藏*/
-  /*.pc_desc
+  
         display: none*/
   /*MB pop內容樣式*/
   .popup-decoration {
