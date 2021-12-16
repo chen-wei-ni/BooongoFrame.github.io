@@ -73,6 +73,7 @@ ul {
   height: 500px;
   background-size: cover;
   animation: kenburns-top 12s infinite  ease alternate-reverse both;
+  animation-delay: -2s;
 }
 
 .width_bn .character {
