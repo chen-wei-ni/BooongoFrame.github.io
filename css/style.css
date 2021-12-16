@@ -703,9 +703,9 @@ ul {
   .line-one {
     padding: 0 0 1rem 0;
   }
-  .content_desc {
+  /*.content_desc {
     padding: 0 .95rem 2.5rem .95rem;
-  }
+  }*/
   .line-one .btns .btn-group {
     display: -ms-grid;
     display: grid;
