@@ -124,14 +124,7 @@ ul {
 }
 
 .main_bn .right_block .total_prize .number {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffd100), to(#ffef00));
-  background: linear-gradient(to top, #ffd100, #ffef00);
-  -webkit-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
-          filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+  
 }
 
 .main_bn .right_block .total_prize .number h1 {
@@ -140,6 +133,14 @@ ul {
   margin: 0;
   text-align: center;
   letter-spacing: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffd100), to(#ffef00));
+  background: linear-gradient(to top, #ffd100, #ffef00);
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
 }
 
 /*銜接處*/
