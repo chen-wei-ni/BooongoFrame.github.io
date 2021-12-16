@@ -101,6 +101,10 @@ ul
             .number
                 background: linear-gradient(to top,#ffd100,#ffef00)
                 -webkit-background-clip: text
+                -moz-background-clip: text       //for Firefox
+                -webkit-background-clip: text        //for Google Chrome、Safari
+                -o-background-clip: text       //for Opera
+                background-clip: text       //for IE
                 color: transparent
                 filter: drop-shadow(0px 5px 5px rgba(#000,0.6))
                 h1
