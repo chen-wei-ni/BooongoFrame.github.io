@@ -700,9 +700,11 @@ ul {
 
 
   .width_bn {
-    height: 140vw;
+    height: 145vw;
   }
-  
+  .content_desc {
+    padding: 0 .95rem 2rem .95rem 
+  }
   .line-one .btns .btn-group {
     display: -ms-grid;
     display: grid;
