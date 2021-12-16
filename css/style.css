@@ -2,6 +2,10 @@
 @import url("fonts.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: impact;
+  src: url(../fonts/frame/impact.ttf);
+}
 body {
   margin: 0;
   padding: 0;
