@@ -695,10 +695,16 @@ ul {
     padding: 0;
   }
 }
-
 @media screen and (max-width: 414px) {
+
   .width_bn {
-    height: 140vw;
+    height: 145vw;
+  }
+  .line-one {
+    padding: 0;
+  }
+  .content_desc {
+    padding: 0 15px 2.5rem 15px;
   }
   .line-one .btns .btn-group {
     display: -ms-grid;
