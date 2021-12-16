@@ -172,6 +172,7 @@ ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
+  right: 0;
 }
 
 .line-one .btns a {
