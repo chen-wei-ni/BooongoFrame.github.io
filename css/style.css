@@ -704,7 +704,7 @@ ul {
     padding: 0;
   }
   .content_desc {
-    padding: 0 15px 2.5rem 15px;
+    padding: 0 .95rem 2.5rem .95rem;
   }
   .line-one .btns .btn-group {
     display: -ms-grid;
@@ -750,6 +750,14 @@ ul {
   }
   .detail {
     margin: 1rem .5rem 0 .5rem;
+  }
+}
+@media screen and (max-width: 320px){
+  .width_bn {
+    height: 150vw;
+  }
+  .width_bn .mb_slogan .total_prize .number h1 {
+    font-size: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
