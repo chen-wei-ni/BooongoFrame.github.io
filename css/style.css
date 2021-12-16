@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("animate.css");
 @import url("fonts.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
@@ -62,6 +63,7 @@ ul {
   position: relative;
   height: 500px;
   width: 100%;
+  overflow: hidden;
 }
 
 .width_bn .bg_wrapper {
@@ -70,6 +72,7 @@ ul {
   width: 100%;
   height: 500px;
   background-size: cover;
+  animation: kenburns-top 12s infinite  ease alternate-reverse both;
 }
 
 .width_bn .character {
@@ -126,10 +129,6 @@ ul {
   vertical-align: 10%;
 }
 
-.main_bn .right_block .total_prize .number {
-  
-}
-
 .main_bn .right_block .total_prize .number h1 {
   font-family: 'impact','Roboto',serif;
   font-weight: 900;
@@ -150,7 +149,7 @@ ul {
 /*銜接處*/
 .web_connect {
   position: absolute;
-  bottom: -25px;
+  bottom: -18px;
   width: 100%;
 }
 
@@ -201,7 +200,7 @@ ul {
   border: solid 2px #ff94ff;
 }
 
-/*頁籤內容 ***活動遊戲**** SRART*/
+/*頁籤內容 ***活動遊戲**** START*/
 .tab-container {
   width: 1170px;
   margin: 0 auto;
@@ -250,6 +249,17 @@ ul {
   text-align: center;
 }
 
+.event_games ul li a {
+  display: block;
+}
+.event_games ul li:hover >a {
+  transform: translateY(5px);
+  filter: drop-shadow(0mm 0mm 5mm rgb(195, 0, 255)) brightness(120%);
+}
+.event_games ul li:hover span {
+  color:#fb79ff;
+}
+
 .event_games ul li a span {
   color: #fff;
   display: block;
@@ -282,6 +292,9 @@ ul {
 .link_games ul li {
   margin: .2rem .3rem;
   color: #fff;
+}
+.link_games ul li:hover a {
+  color:#fb79ff;
 }
 
 /*頁籤內容 ***活動內容**** SRART*/
@@ -368,7 +381,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/*頁籤內容 ***注意事項**** SRART*/
+/*頁籤內容 ***注意事項**** START*/
 .notice {
   display: -ms-grid;
   display: grid;
@@ -439,6 +452,9 @@ ul {
   .main_bn .right_block .total_prize .number h1 {
     font-size: 3.8rem;
   }
+  .web_connect {
+    bottom: -15px;
+  }
   .title {
     top: 380px;
   }
@@ -481,7 +497,7 @@ ul {
     height: 280px;
   }
   .web_connect {
-    bottom: -20px;
+    bottom: -12px;
   }
   .line-one {
     width: 700px;
@@ -633,7 +649,6 @@ ul {
     margin-top: -10px;
   }
   
-        display: none*/
   /*MB pop內容樣式*/
   .popup-decoration {
     position: relative;
@@ -673,7 +688,7 @@ ul {
   /*遊戲為兩個一列*/
   .event_games ul {
     -ms-grid-columns: (minmax(100px, 1fr))[2];
-        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
   .link_games ul {
     padding: 0;
@@ -707,12 +722,13 @@ ul {
     background: transparent;
     border: none;
     margin: 0;
+    text-align: center;
   }
   .line-one .btns .btn-group a.active {
     background: -webkit-gradient(linear, left top, left bottom, from(#ee00ff), to(#11004f));
     background: linear-gradient(#ee00ff, #11004f);
-    -webkit-filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.5));
-            filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.5));
+    -webkit-filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.5)) brightness(120%);
+            filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.5)) brightness(120%);
     -webkit-transform: translateY(-4px);
             transform: translateY(-4px);
   }

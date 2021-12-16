@@ -1,1 +1,20 @@
-/* No CSS *//*# sourceMappingURL=animate.css.map */
+@keyframes kenburns-top {
+    0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+    }
+    15%,39%,60% {
+        filter: brightness(120%);
+    }
+    25%,45%,72% {
+        filter: blur(15%);
+        filter: brightness(100%);
+    }
+    36%,56%,78% {
+        filter: brightness(130%);
+    }    
+    100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+    }
+}
