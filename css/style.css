@@ -56,7 +56,7 @@ ul {
   width: 150px;
   padding: .2rem 1rem;
   position: absolute;
-  z-index: 10;
+  z-index: 50;
 }
 
 .width_bn {
