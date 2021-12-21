@@ -61,7 +61,7 @@ ul {
 
 .width_bn {
   position: relative;
-  height: 500px;
+  height: 470px;
   width: 100%;
   overflow: hidden;
 }
@@ -70,7 +70,7 @@ ul {
   position: absolute;
   background: url("../images/demo/pc/bg-top.png") top center no-repeat;
   width: 100%;
-  height: 500px;
+  height: 470px;
   background-size: cover;
   animation: kenburns-top 12s infinite  ease alternate-reverse both;
   animation-delay: -2s;
@@ -80,15 +80,16 @@ ul {
   position: absolute;
   background: url("../images/demo/pc/banner-up.png") top center no-repeat;
   width: 100%;
-  height: 500px;
+  height: 470px;
   background-size: auto 100%;
+  z-index: 10;
 }
 
 .width_bn .float {
   position: absolute;
   background: url("../images/demo/pc/coin.png") top center no-repeat;
   width: 100%;
-  height: 500px;
+  height: 470px;
   background-size: auto 100%;
 }
 
@@ -106,6 +107,8 @@ ul {
 
 .main_bn .right_block {
   position: absolute;
+  z-index: 30;
+  top: -3%
 }
 
 .main_bn .right_block .total_prize .block_black {
@@ -136,7 +139,7 @@ ul {
   font-size: 6rem;
   margin: 0;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   background: -webkit-gradient(linear, left bottom, left top, from(#ffd100), to(#ffef00));
   background: linear-gradient(to top, #ffd100, #ffef00);
   -webkit-background-clip: text;
@@ -146,12 +149,16 @@ ul {
   -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
           filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
 }
+.fuyofuyo {
+  animation: fuyofuyo 1.5s linear alternate;
+}
 
 /*銜接處*/
 .web_connect {
   position: absolute;
-  bottom: -18px;
+  bottom: -30px;
   width: 100%;
+  z-index: 20;
 }
 
 .web_connect img {
@@ -451,7 +458,7 @@ ul {
     font-size: .9rem;
   }
   .main_bn .right_block .total_prize .number h1 {
-    font-size: 3.8rem;
+    font-size: 4.2rem;
   }
   .web_connect {
     bottom: -15px;
@@ -615,6 +622,9 @@ ul {
     color: transparent;
     -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
             filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.6));
+  }
+  .fuyofuyo2 {
+    animation: fuyofuyo 1.5s linear alternate;
   }
   .web_connect img {
     min-height: 50px;
