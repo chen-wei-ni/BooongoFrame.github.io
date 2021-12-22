@@ -216,7 +216,6 @@ ul {
 
 /*內容小標題*/
 .title {
-  width: 380px;
   margin-top: .9rem;
 }
 
@@ -224,12 +223,11 @@ ul {
   margin: 0;
   color: #fff;
   position: relative;
-  padding: 5px 0 5px 85px;
+  padding: 6px 0 6px 65px;
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(76, 6, 186, 0)), color-stop(10%, rgba(76, 6, 186, 0)), color-stop(20%, #4c06ba), to(rgba(76, 6, 186, 0)));
-  background: linear-gradient(to right, rgba(76, 6, 186, 0), rgba(76, 6, 186, 0) 10%, #4c06ba 20%, rgba(76, 6, 186, 0));
+  background: linear-gradient(to right, rgba(76, 6, 186, 0),  #4c06ba 5%, rgba(76, 6, 186, 0)32%);
 }
 
 .title p::before {
@@ -240,7 +238,7 @@ ul {
   height: 70px;
   background: url("../images/demo/pc/title.png");
   background-size: contain;
-  left: 16px;
+  left: -6px;
   top: -20px;
 }
 
@@ -467,7 +465,11 @@ ul {
     padding: 0 .95rem 2rem .95rem;
   }
   .title {
-    top: 380px;
+    margin-top: 2.5rem;
+  }
+  .title p {
+    padding: 8px 0 8px 65px;
+    background: linear-gradient(to right, rgba(76, 6, 186, 0), #4c06ba 10%, rgba(76, 6, 186, 0)50%);
   }
   .line-one {
     width: 900px;
@@ -532,7 +534,7 @@ ul {
   }
   .title {
     top: 305px;
-    width: 280px;
+    /*width: 280px;*/
   }
   .title p {
     font-size: 1.2rem;
@@ -690,7 +692,7 @@ ul {
   }
   .title {
     position: static;
-    width: 250px;
+    /*width: 250px;*/
   }
   .title p {
     padding: 8px 0 8px 60px;
@@ -771,6 +773,12 @@ ul {
   }
   .notice .notice_desc {
     padding: 0 2rem 0 2.5rem;
+  }
+  .title {
+    margin-top: 1rem;
+  }
+  .title p {
+    background: linear-gradient(to right, rgba(76, 6, 186, 0), #4c06ba 15%, rgba(76, 6, 186, 0)70%)
   }
 }
 @media screen and (max-width: 318px) {
