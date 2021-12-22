@@ -463,6 +463,9 @@ ul {
   .web_connect {
     bottom: -15px;
   }
+  .content_desc {
+    padding: 0 .95rem 2rem .95rem
+  }
   .title {
     top: 380px;
   }
@@ -487,7 +490,7 @@ ul {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .link_games {
-    margin-top: 2rem;
+    margin-top: 2rem ;
   }
 }
 
