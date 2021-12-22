@@ -464,7 +464,7 @@ ul {
     bottom: -15px;
   }
   .content_desc {
-    padding: 0 .95rem 2rem .95rem
+    padding: 0 .95rem 2rem .95rem;
   }
   .title {
     top: 380px;
@@ -491,6 +491,12 @@ ul {
   }
   .link_games {
     margin-top: 2rem ;
+  }
+  .left_part {
+    padding: 0;
+  }
+  .notice .notice_desc {
+    padding: 0 1rem;
   }
 }
 
@@ -762,6 +768,9 @@ ul {
   }
   .detail {
     margin: 1rem .5rem 0 .5rem;
+  }
+  .notice .notice_desc {
+    padding: 0 2rem 0 2.5rem;
   }
 }
 @media screen and (max-width: 318px) {
