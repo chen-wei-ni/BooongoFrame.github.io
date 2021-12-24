@@ -139,7 +139,7 @@ ul {
   margin: 0;
   text-align: center;
   letter-spacing: 6px;
-  background: linear-gradient(to top, #ffbb00, #ffef00);
+  background: linear-gradient(to top, #ffbb00, #fff019);
   -webkit-background-clip: text;
   -webkit-background-clip: text;
   background-clip: text;
@@ -534,7 +534,6 @@ ul {
     width: 700px;
   }
   .line-one .btns a {
-    padding: 0.5rem;
     margin: 0 2px;
     height: 2.8rem;
     width: 11rem;
@@ -745,6 +744,13 @@ ul {
   .number {
     margin-top: -.5rem;
   }
+  .line-one {
+    padding: 0 ;
+    display: inline-block;
+  }
+  .line-one .btns {
+    position: static;
+  }
   .line-one .btns .btn-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -762,6 +768,7 @@ ul {
     text-align: center;
     width: initial;
     height: initial;
+    padding: .8rem 0;
   }
   .line-one .btns .btn-group a.active {
     background: linear-gradient(#ee00ff, #11004f);
@@ -787,13 +794,10 @@ ul {
     padding: 0 2rem 0 2.5rem;
   }
   .title {
-    margin-top: 4rem;
+    margin-top: 0;
   }
   .title p {
-    background: linear-gradient(to right, rgba(76, 6, 186, 0) 12%, #4c06ba 13%, rgba(76, 6, 186, 0)70%);
-  }
-  .line-one {
-    padding: 0 ;
+    background: linear-gradient(to right, rgba(76, 6, 186, 0) 9%, #4c06ba 13%, rgba(76, 6, 186, 0)70%);
   }
   .width_bn .mb_slogan .total_prize .number h1 {
     font-size: 6.7rem;
