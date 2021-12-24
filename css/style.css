@@ -748,7 +748,7 @@ ul {
   .line-one .btns .btn-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background: linear-gradient(#cd00d5 0%, #26005f 90%, #11004f 98%);
+    background: linear-gradient(#cd00d5 0%, #26005f 90%, #000000 98%);
     border-radius: 15px 15px 0 0;
   }
   .line-one .btns .btn-group a {
