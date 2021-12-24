@@ -746,24 +746,15 @@ ul {
     margin-top: -.5rem;
   }
   .line-one .btns .btn-group {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    background: -webkit-gradient(linear, left top, left bottom, from(#cd00d5), color-stop(90%, #26005f), color-stop(98%, #11004f));
+    grid-template-columns: repeat(3, 1fr);
     background: linear-gradient(#cd00d5 0%, #26005f 90%, #11004f 98%);
     border-radius: 15px 15px 0 0;
   }
   .line-one .btns .btn-group a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px 15px 0 0;
     background: transparent;
     border: none;
@@ -773,12 +764,9 @@ ul {
     height: initial;
   }
   .line-one .btns .btn-group a.active {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ee00ff), to(#11004f));
     background: linear-gradient(#ee00ff, #11004f);
-    -webkit-filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.5)) brightness(120%);
-            filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.5)) brightness(120%);
-    -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
+    filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.5)) brightness(120%);
+    transform: translateY(-4px);
   }
   .left_part {
     padding: 0;
